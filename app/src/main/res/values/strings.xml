@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Apk_Final_Tecinfo</string>
+    <string name="title_activity_act__principal">Act_Principal</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <!--Menu drawer-->
+    <string name="estabelecimento">Cadastrar Estabelecimento</string>
+    <string name="perfil">Perfil</string>
+    <string name="txt_act_login_cadastro">Não sou cadastrado</string>
+    <string name="btn_act_login_btn_entrar">ENTRAR</string>
+
+</resources>
