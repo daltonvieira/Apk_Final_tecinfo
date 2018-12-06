@@ -12,7 +12,8 @@
         <activity
             android:name=".Tela_Apresentacao"
             android:theme="@style/AppTheme.NoActionBar">
-            <!--android:theme="@style/NoActionBar"-->
+
+            <!-- android:theme="@style/NoActionBar" -->
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,14 +23,15 @@
         </activity>
         <activity
             android:name=".Act_Login"
-            android:theme="@style/AppTheme.NoActionBar"/>
-
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".Act_Principal"
             android:label="@string/title_activity_act__principal"
-            android:theme="@style/AppTheme.NoActionBar">
-
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Act_cadastro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Act_Cadastro2"></activity>
     </application>
 
 </manifest>

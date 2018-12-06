@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Act_cadastro"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/Cor_de_Fundo_EDT"
+        android:ems="10"
+        android:hint="@string/cad_nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/edit_sobrenome"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Cor_de_Fundo_EDT"
+        android:ems="10"
+        android:hint="@string/cad_sobrenome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/edit_senha"
+        app:layout_constraintStart_toStartOf="@+id/edit_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+
+    <EditText
+        android:id="@+id/edit_data"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Cor_de_Fundo_EDT"
+        android:ems="10"
+        android:hint="@string/cad_data"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/edit_sobrenome"
+        app:layout_constraintStart_toStartOf="@+id/edit_sobrenome"
+        app:layout_constraintTop_toBottomOf="@+id/edit_sobrenome" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Cor_de_Fundo_EDT"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/edit_data"
+        app:layout_constraintStart_toStartOf="@+id/edit_data"
+        app:layout_constraintTop_toBottomOf="@+id/edit_data">
+
+        <TextView
+            android:id="@+id/edit_sexo"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="@color/Cor_de_Fundo_EDT"
+            android:ems="10"
+            android:hint="Senha"
+            android:text="@string/cad_sexo"
+            tools:layout_editor_absoluteX="82dp"
+            tools:layout_editor_absoluteY="430dp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="@color/Cor_de_Fundo_EDT"
+            android:text="@string/radio_m" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="0dp"
+            android:layout_height="43dp"
+            android:layout_weight="1"
+            android:background="@color/Cor_de_Fundo_EDT"
+            android:text="@string/radio_f" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/Cor_de_Fundo_Botao"
+        android:text="@string/btn_voltar"
+        android:textColor="#ffffff"
+        android:onClick="onClickVoltar"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btn_proximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/Cor_de_Fundo_Botao"
+        android:text="@string/btn_proximo"
+        android:textColor="#ffffff"
+        android:onClick="onClickProximo"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</android.support.constraint.ConstraintLayout>

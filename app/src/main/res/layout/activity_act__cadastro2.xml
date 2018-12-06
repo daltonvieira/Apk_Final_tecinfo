@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Act_Cadastro2"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo" />
+
+    <EditText
+        android:id="@+id/edit_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/Cor_de_Fundo_EDT"
+        android:ems="10"
+        android:hint="@string/cad_usuario"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Cor_de_Fundo_EDT"
+        android:ems="10"
+        android:hint="@string/cad_senha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edit_usuario"
+        app:layout_constraintStart_toStartOf="@+id/edit_usuario"
+        app:layout_constraintTop_toBottomOf="@+id/edit_usuario" />
+
+    <EditText
+        android:id="@+id/edit_conf_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/Cor_de_Fundo_EDT"
+        android:ems="10"
+        android:hint="@string/cad_confsenha"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/edit_senha"
+        app:layout_constraintStart_toStartOf="@+id/edit_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+
+    <Button
+        android:id="@+id/btn_Voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/Cor_de_Fundo_Botao"
+        android:onClick="onClickVoltar"
+        android:text="@string/btn_voltar"
+        android:textColor="#ffffff"
+        app:layout_constraintStart_toStartOf="@+id/edit_conf_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_conf_senha" />
+
+    <Button
+        android:id="@+id/btn_Concluir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@color/Cor_de_Fundo_Botao"
+        android:onClick="onClickConcluir"
+        android:text="@string/btn_concluir"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="@+id/edit_conf_senha"
+        app:layout_constraintTop_toBottomOf="@+id/edit_conf_senha" />
+
+
+</android.support.constraint.ConstraintLayout>

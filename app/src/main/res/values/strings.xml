@@ -14,5 +14,17 @@
     <string name="perfil">Perfil</string>
     <string name="txt_act_login_cadastro">Não sou cadastrado</string>
     <string name="btn_act_login_btn_entrar">ENTRAR</string>
+    <string name="radio_m">M</string>
+    <string name="radio_f">F</string>
+    <string name="cad_nome">Nome</string>
+    <string name="cad_sobrenome">Sobrenome</string>
+    <string name="cad_data">Data</string>
+    <string name="cad_sexo">Sexo</string>
+    <string name="btn_voltar">Voltar</string>
+    <string name="btn_proximo">Próximo</string>
+    <string name="cad_usuario">Nome do Usuário</string>
+    <string name="cad_senha">Senha</string>
+    <string name="cad_confsenha">Confirmar Senha</string>
+    <string name="btn_concluir">Concluir</string>
 
 </resources>
