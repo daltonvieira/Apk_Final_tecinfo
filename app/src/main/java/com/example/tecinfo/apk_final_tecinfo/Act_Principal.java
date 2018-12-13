@@ -1,8 +1,10 @@
 package com.example.tecinfo.apk_final_tecinfo;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,7 +16,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class Act_Principal extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener,
+        fragment_Principal.OnFragmentInteractionListener,
+        fragment_Perfil.OnFragmentInteractionListener,
+        fragment_Historico.OnFragmentInteractionListener,
+        fragment_favorito.OnFragmentInteractionListener,
+        fragment_sobre.OnFragmentInteractionListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +39,12 @@ public class Act_Principal extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        Fragment fragment = new fragment_Principal();
+        getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
+
+
+
     }
 
     @Override
@@ -73,17 +86,35 @@ public class Act_Principal extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.perfil) {
+            Fragment fragment = new fragment_Perfil();
+            getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
+
             // Handle the camera action
         } else if (id == R.id.historico) {
+            Fragment fragment = new fragment_Historico();
+            getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
 
         } else if (id == R.id.favoritos) {
+            Fragment fragment = new fragment_favorito();
+            getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
 
         } else if (id == R.id.sobre) {
+            Fragment fragment = new fragment_sobre();
+            getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
+
+        }else if (id == R.id.inicio){
+            Fragment fragment = new fragment_Principal();
+            getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
     }
 }

@@ -27,4 +27,8 @@
     <string name="cad_confsenha">Confirmar Senha</string>
     <string name="btn_concluir">Concluir</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fragment_principal_txt_restaurantes">Restaurantes</string>
+
 </resources>
