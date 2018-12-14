@@ -41,6 +41,7 @@ public class Act_Principal extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         Fragment fragment = new fragment_Principal();
+        getSupportActionBar().setBackgroundDrawable(getResources().getDrawable(R.color.Cor_Icones_NavDrawer));
         getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
 
 
@@ -85,22 +86,28 @@ public class Act_Principal extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+
+
         if (id == R.id.perfil) {
             Fragment fragment = new fragment_Perfil();
             getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
+            getSupportActionBar().setTitle("Perfil");
 
             // Handle the camera action
         } else if (id == R.id.historico) {
             Fragment fragment = new fragment_Historico();
             getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
+            getSupportActionBar().setTitle("Histórico");
 
         } else if (id == R.id.favoritos) {
             Fragment fragment = new fragment_favorito();
             getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
+            getSupportActionBar().setTitle("Favoritos");
 
         } else if (id == R.id.sobre) {
             Fragment fragment = new fragment_sobre();
             getSupportFragmentManager() .beginTransaction() .replace(R.id.telaprincipal, fragment) .commit();
+            getSupportActionBar().setTitle("Sobre");
 
         }else if (id == R.id.inicio){
             Fragment fragment = new fragment_Principal();

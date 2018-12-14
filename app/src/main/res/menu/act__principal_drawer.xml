@@ -18,11 +18,11 @@
             android:title="Histórico de Locais" />
         <item
             android:id="@+id/favoritos"
-            android:icon="@drawable/ic_favoritos"
+            android:icon="@drawable/ic_favorito"
             android:title="Locais Favoritos" />
         <item
             android:id="@+id/sobre"
-            android:icon="@drawable/ic_sobre"
+            android:icon="@drawable/ic_827"
             android:title="Sobre" />
     </group>
 

@@ -6,4 +6,5 @@
     <color name="Cor_de_Fundo_EDT">#eeeeee</color>
     <color name="Cor_de_Fundo_Botao">#EF5F37</color>
     <color name="Cor_TXT">#EF5F37</color>
+    <color name="Cor_Icones_NavDrawer">#EF5F37</color>
 </resources>

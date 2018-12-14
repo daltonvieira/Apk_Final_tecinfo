@@ -32,7 +32,9 @@
             android:name=".Act_cadastro"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Act_Cadastro2" />
-        <activity android:name=".Act_Lista_De_Locais"></activity>
+        <activity android:name=".Act_Lista_De_Locais"
+
+            android:parentActivityName=".Act_Principal"></activity>
     </application>
 
 </manifest>
