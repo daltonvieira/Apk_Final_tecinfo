@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment_Perfil"
-    android:background="#00ff51">
+    tools:context=".fragment_Perfil">
 
     <!-- TODO: Update blank fragment layout -->
 
@@ -58,9 +57,9 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="24dp"
             android:text="Nome:"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -110,24 +109,21 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginTop="24dp"
             android:text="Jubileu da Silva"
             android:textSize="18sp"
-            app:layout_constraintBottom_toTopOf="@+id/textView10"
-            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="@+id/textView10"
             app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
         <TextView
             android:id="@+id/textView10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
-            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:text="11/11/2000"
             android:textSize="18sp"
-            app:layout_constraintStart_toEndOf="@+id/textView4"
-            tools:layout_editor_absoluteY="277dp" />
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
         <TextView
             android:id="@+id/textView11"
@@ -136,7 +132,7 @@
             android:layout_marginTop="8dp"
             android:text="(99) 99999-9999"
             android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="@+id/textView10"
+            app:layout_constraintEnd_toEndOf="@+id/textView12"
             app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
         <TextView
@@ -146,7 +142,7 @@
             android:layout_marginTop="8dp"
             android:text="Masculino"
             android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="@+id/textView13"
             app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
         <TextView
@@ -154,9 +150,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
             android:text="jubileu100%jesus@gmail.com"
             android:textSize="18sp"
-            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
     </android.support.constraint.ConstraintLayout>
