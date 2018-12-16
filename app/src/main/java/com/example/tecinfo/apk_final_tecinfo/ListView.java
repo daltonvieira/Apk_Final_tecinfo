@@ -4,6 +4,7 @@ public class ListView {
 
     private String nome;
     private String endereco;
+    private String cidade;
     private int imagen;
     private int stat1;
     private int stat2;
@@ -12,9 +13,10 @@ public class ListView {
     private int stat5;
 
 
-    public ListView (String nome , String endereco, int imagen, int stat1, int stat2, int stat3, int stat4, int stat5) {
+    public ListView (String nome , String endereco, String cidade, int imagen, int stat1, int stat2, int stat3, int stat4, int stat5) {
         this.nome = nome;
         this.endereco = endereco;
+        this.cidade = cidade;
         this.imagen = imagen;
         this.stat1 = stat1;
         this.stat2 = stat2;
@@ -22,6 +24,14 @@ public class ListView {
         this.stat4 = stat4;
         this.stat5 = stat5;
 
+    }
+
+    public String getCidade() {
+        return cidade;
+    }
+
+    public void setCidade(String cidade) {
+        this.cidade = cidade;
     }
 
     public String getNome() {

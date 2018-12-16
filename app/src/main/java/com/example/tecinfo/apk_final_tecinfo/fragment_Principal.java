@@ -33,8 +33,14 @@ public class fragment_Principal extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment_fragment__principal, container, false);
 
-        ImageView img = (ImageView) v.findViewById(R.id.img_res);
-        img.setOnClickListener(new View.OnClickListener() {
+        ImageView img1 = (ImageView) v.findViewById(R.id.img_res);
+        ImageView img2 = (ImageView) v.findViewById(R.id.img_Piz);
+        ImageView img3 = (ImageView) v.findViewById(R.id.img_Par);
+        ImageView img4 = (ImageView) v.findViewById(R.id.img_Pis);
+        ImageView img5 = (ImageView) v.findViewById(R.id.img_lan);
+        ImageView img6 = (ImageView) v.findViewById(R.id.img_outros);
+
+        img1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(getActivity(), Act_Lista_De_Locais.class);
@@ -44,9 +50,7 @@ public class fragment_Principal extends Fragment {
             }
         });
 
-
-        ImageView img1 = (ImageView) v.findViewById(R.id.img_bar);
-        img1.setOnClickListener(new View.OnClickListener() {
+        img2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent it = new Intent(getActivity(), Act_Lista_De_Locais.class);
@@ -55,6 +59,50 @@ public class fragment_Principal extends Fragment {
 
             }
         });
+
+        img3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), Act_Lista_De_Locais.class);
+                it.putExtra("identificador", "3");
+                startActivity(it);
+
+            }
+        });
+
+        img4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), Act_Lista_De_Locais.class);
+                it.putExtra("identificador", "4");
+                startActivity(it);
+
+            }
+        });
+
+        img5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), Act_Lista_De_Locais.class);
+                it.putExtra("identificador", "5");
+                startActivity(it);
+
+            }
+        });
+
+        img6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getActivity(), Act_Lista_De_Locais.class);
+                it.putExtra("identificador", "6");
+                startActivity(it);
+
+            }
+        });
+
+
+
+
         return v;
     }
 

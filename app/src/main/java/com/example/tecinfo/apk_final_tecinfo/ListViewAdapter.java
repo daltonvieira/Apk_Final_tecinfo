@@ -26,6 +26,8 @@ public class ListViewAdapter extends ArrayAdapter<ListView> {
         View rowView= inflater.inflate(R.layout.listview, parent, false);
         TextView nomeList = (TextView) rowView.findViewById(R.id.txt_Nome);
         TextView enderecoList = (TextView) rowView.findViewById(R.id.txt_Endereco);
+        TextView cidadeList = (TextView) rowView.findViewById(R.id.txt_Cidade);
+
         ImageView imagemList = (ImageView) rowView.findViewById(R.id.imagem);
         ImageView stat1List = (ImageView) rowView.findViewById(R.id.stat1);
         ImageView stat2List = (ImageView) rowView.findViewById(R.id.stat2);
@@ -35,6 +37,7 @@ public class ListViewAdapter extends ArrayAdapter<ListView> {
 
         nomeList.setText(elementos.get(position).getNome());
         enderecoList.setText(elementos.get(position).getEndereco());
+        cidadeList.setText(elementos.get(position).getCidade());
         imagemList.setImageResource(elementos.get(position).getImagen());
         stat1List.setImageResource(elementos.get(position).getStat1());
         stat2List.setImageResource(elementos.get(position).getStat2());
