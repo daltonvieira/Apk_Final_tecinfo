@@ -20,6 +20,9 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act__detalhe__estabelecimento);
+
+        Fragment fragment = new Fragment_Ambiente();
+        getSupportFragmentManager() .beginTransaction() .replace(R.id.parafragmet, fragment) .commit();
         //#############################################
         //####Botões que iram chamar os Fragments######
         //#############################################
