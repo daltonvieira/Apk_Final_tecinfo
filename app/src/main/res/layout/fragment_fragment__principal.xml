@@ -38,7 +38,7 @@
                     android:id="@+id/img_Piz"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_pisc" />
+                    android:src="@drawable/img_pizz" />
 
                 <TextView
                     android:id="@+id/textView48"
@@ -106,7 +106,7 @@
                     android:id="@+id/img_Pis"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/img_pizz" />
+                    android:src="@drawable/img_pisc" />
 
                 <TextView
                     android:id="@+id/teView458"
