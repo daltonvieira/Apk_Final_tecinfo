@@ -35,5 +35,7 @@
     <string name="fragment_principal_txt_parques">Parques</string>
     <string name="fragment_principal_txt_pizzarias">Pizzarias</string>
     <string name="fragment_principal_txt_outros">Outros</string>
+    <string name="title_activity_act__mapa">Map</string>
+
 
 </resources>

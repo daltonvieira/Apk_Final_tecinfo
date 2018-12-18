@@ -2,6 +2,7 @@ package com.example.tecinfo.apk_final_tecinfo;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.support.constraint.ConstraintLayout;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 public class Act_Detalhe_Estabelecimento extends AppCompatActivity
     implements Fragment_Ambiente.OnFragmentInteractionListener,
         Fragment_Pratos.OnFragmentInteractionListener,
+        Fragment_Avaliacao.OnFragmentInteractionListener,
         Fragment_Cardapio.OnFragmentInteractionListener{
 
     @Override
@@ -30,6 +32,17 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
         final ImageButton btn_Ambiente = findViewById(R.id.btn_Ambiente);
         final ImageButton btn_Pratos = findViewById(R.id.btn_Pratos);
         final ImageButton btn_Cardapio = findViewById(R.id.btn_Cardapio);
+        final ImageButton btn_Avaliacao = findViewById(R.id.btn_Avaliacao);
+        final ConstraintLayout layout = (ConstraintLayout) findViewById(R.id.layout_Endereco);
+        layout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent it = new Intent(getApplicationContext(), Act_Mapa.class);
+                startActivity(it);
+                finish();
+            }
+        });
+
 
         btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao);
         btn_Ambiente.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +53,7 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
                 btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao);
                 btn_Pratos.setBackgroundResource(R.color.Cor_troca_de_botao_b);
                 btn_Cardapio.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Avaliacao.setBackgroundResource(R.color.Cor_troca_de_botao_b);
             }
         });
 
@@ -51,6 +65,7 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
                 btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao_b);
                 btn_Pratos.setBackgroundResource(R.color.Cor_troca_de_botao);
                 btn_Cardapio.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Avaliacao.setBackgroundResource(R.color.Cor_troca_de_botao_b);
             }
         });
 
@@ -62,6 +77,20 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
                 btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao_b);
                 btn_Pratos.setBackgroundResource(R.color.Cor_troca_de_botao_b);
                 btn_Cardapio.setBackgroundResource(R.color.Cor_troca_de_botao);
+                btn_Avaliacao.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+            }
+        });
+
+        btn_Avaliacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Fragment fragment = new Fragment_Avaliacao();
+                getSupportFragmentManager() .beginTransaction() .replace(R.id.parafragmet, fragment) .commit();
+                btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Pratos.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Cardapio.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Avaliacao.setBackgroundResource(R.color.Cor_troca_de_botao);
+
             }
         });
 
