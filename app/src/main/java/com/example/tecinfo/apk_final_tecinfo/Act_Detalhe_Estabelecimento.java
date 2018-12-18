@@ -20,20 +20,26 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_act__detalhe__estabelecimento);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         Fragment fragment = new Fragment_Ambiente();
         getSupportFragmentManager() .beginTransaction() .replace(R.id.parafragmet, fragment) .commit();
         //#############################################
         //####Botões que iram chamar os Fragments######
         //#############################################
-        ImageButton btn_Ambiente = findViewById(R.id.btn_Ambiente);
-        ImageButton btn_Pratos = findViewById(R.id.btn_Pratos);
-        ImageButton btn_Cardapio = findViewById(R.id.btn_Cardapio);
+        final ImageButton btn_Ambiente = findViewById(R.id.btn_Ambiente);
+        final ImageButton btn_Pratos = findViewById(R.id.btn_Pratos);
+        final ImageButton btn_Cardapio = findViewById(R.id.btn_Cardapio);
+
+        btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao);
         btn_Ambiente.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Fragment fragment = new Fragment_Ambiente();
                 getSupportFragmentManager() .beginTransaction() .replace(R.id.parafragmet, fragment) .commit();
+                btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao);
+                btn_Pratos.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Cardapio.setBackgroundResource(R.color.Cor_troca_de_botao_b);
             }
         });
 
@@ -42,6 +48,9 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
             public void onClick(View v) {
                 Fragment fragment = new Fragment_Pratos();
                 getSupportFragmentManager() .beginTransaction() .replace(R.id.parafragmet, fragment) .commit();
+                btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Pratos.setBackgroundResource(R.color.Cor_troca_de_botao);
+                btn_Cardapio.setBackgroundResource(R.color.Cor_troca_de_botao_b);
             }
         });
 
@@ -50,6 +59,9 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
             public void onClick(View v) {
                 Fragment fragment = new Fragment_Cardapio();
                 getSupportFragmentManager() .beginTransaction() .replace(R.id.parafragmet, fragment) .commit();
+                btn_Ambiente.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Pratos.setBackgroundResource(R.color.Cor_troca_de_botao_b);
+                btn_Cardapio.setBackgroundResource(R.color.Cor_troca_de_botao);
             }
         });
 
@@ -79,6 +91,7 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
 
         if (identificador.equals("1")) {
             txt_Tipo.setText("Restaurante");
+            getSupportActionBar().setTitle("Restaurante");
             txt_Status.setText("Aberto");
             txt_Horario.setText("Horário:  11:00–00:00");
 
@@ -129,8 +142,17 @@ public class Act_Detalhe_Estabelecimento extends AppCompatActivity
 
 
 
-        } else{
+        } else if (identificador.equals("2")){
+            getSupportActionBar().setTitle("Pizzaria");
             Toast.makeText(getApplicationContext(), "afafaf", Toast.LENGTH_LONG).show();
+        }else if (identificador.equals("3")){
+            getSupportActionBar().setTitle("Parques");
+        }else if (identificador.equals("4")){
+            getSupportActionBar().setTitle("Piscinas");
+        }else if (identificador.equals("5")){
+            getSupportActionBar().setTitle(("Lanchonete"));
+        }else if (identificador.equals("6")){
+            getSupportActionBar().setTitle(("Outros"));
         }
 
     }

@@ -35,7 +35,8 @@
         <activity
             android:name=".Act_Lista_De_Locais"
             android:parentActivityName=".Act_Principal" />
-        <activity android:name=".Act_Detalhe_Estabelecimento"></activity>
+        <activity android:name=".Act_Detalhe_Estabelecimento"
+            android:parentActivityName=".Act_Lista_De_Locais"></activity>
     </application>
 
 </manifest>
