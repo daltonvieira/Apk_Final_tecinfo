@@ -236,6 +236,27 @@ public class Act_Lista_De_Locais extends AppCompatActivity {
 
             while (x<5){
                 x++;
+                ListView e = new ListView("Lagoa Parque Senhor dos Passos",
+                        "Av. Joaquim Cavalcante, 361-629", "Remígio - PB", R.drawable.parque_1, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
+
+                e = new ListView("Parque Açude Novo",
+                        "R. Dom Pedro II - Centro", "Campina Grande - PB", R.drawable.parque_2, R.drawable.p_4, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
+
+                e = new ListView("Parque Bodocongó",
+                        "Av. Juvêncio Arruda, 1232-1310 - Bodocongó", "Campina Grande - PB", R.drawable.parque_3, R.drawable.p_4, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
+
+                e = new ListView("Parque da Criança",
+                                "Av. Dr. Elpídio de Almeida, 215 - Catolé", "Campina Grande - PB", R.drawable.parque_4, R.drawable.p_4, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
+
+                e = new ListView("Parque da Liberdade",
+                        "R. Getúlio Cavalcante - Liberdade", "Campina Grande - PB", R.drawable.parque_4, R.drawable.p_4, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
+
+
 
             }
 
@@ -252,10 +273,10 @@ public class Act_Lista_De_Locais extends AppCompatActivity {
                         "R. Sn 107 - Aeroporto, Bayeux - PB", "Bayenux - PB", R.drawable.pisc_2, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
                 list.add(e);
                 e = new ListView("Piscina Paraiso Do Castanho",
-                        "R. João Miranda, 1417 - Castanho", "Queimadas - PB",  R.drawable.pisc_3, R.drawable.star1, R.drawable.p_4, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                        "R. João Miranda, 1417 - Castanho", "Queimadas - PB",  R.drawable.pisc_3, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
                 list.add(e);
                 e = new ListView("Piscinas Fiber ®",
-                        "Av. Pref. Severino Bezerra Cabral, 155 - José Pinheiro", "Campina Grande - PB",  R.drawable.pisc_4, R.drawable.p_4, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                        "Av. Pref. Severino Bezerra Cabral, 155 - José Pinheiro", "Campina Grande - PB",  R.drawable.pisc_4, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
                 list.add(e);
 
             }
@@ -273,7 +294,24 @@ public class Act_Lista_De_Locais extends AppCompatActivity {
 
             while (x<5){
                 x++;
+                ListView e = new ListView("Coqueiral Park - Pescaria e Lazer",
+                        " Avenida Lígia Gomes, II Perimetral Norte, s/n - Ouro Preto", "Olinda - PE", R.drawable.outro_1, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
 
+                e = new ListView("Espaço de Lazer Santa Eufémia",
+                        "PE-027, Abreu e Lima - PE", " Abreu e Lima - PE ",  R.drawable.outro_2, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
+
+                e = new ListView("Lagos Country e Resort",
+                        "BR-230, 083 - Centro,", "Riachão do Poço - PB",  R.drawable.outro_3, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+
+                e = new ListView("Pousada Lazer do Sol",
+                        "Thelpa, Lucena - PB, 58315-000", "Lucena - PB",  R.drawable.outro_4, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
+
+                e = new ListView("Recanto Do Lazer",
+                        "Loc Granja Santa Maria, S/N - Zona Rural", "Santa Rita - PB",  R.drawable.outro_5, R.drawable.star1, R.drawable.star1, R.drawable.star1, R.drawable.star2, R.drawable.star2);
+                list.add(e);
             }
 
         }
